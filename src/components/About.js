@@ -77,7 +77,7 @@ const About = () => {
                digital products that blend functionality, design, and innovation to deliver meaningful user experiences.
                 </p>
                 <p>
-                  With hands-on experience in React.js, Node.js, Express.js, MongoDB, and integrations like OpenAI APIs 
+                  With 1.6 years of hands-on experience in React.js, Node.js, Express.js, MongoDB, and integrations like OpenAI APIs 
                   and Stripe, I excel at developing intelligent, secure, and efficient solutions that align with modern 
                   business needs. I approach every project with a mindset focused on quality, optimization,
                    and real-world impact..

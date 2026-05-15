@@ -7,21 +7,39 @@ const Experience = () => {
     {
       title: "Full Stack Developer",
       company: "Adversity Solutions",
-      duration: "July 2024 – October 2025",
+      duration: "July 2024 \u2013 October 2025",
       location: "Mysore, India",
       type: "Full-Time",
-      logo: "🏢",
+      logo: "\u{1F3E2}",
       description:
-        "Developed, optimized, and deployed full-stack web applications within an Agile environment, collaborating closely with cross-functional teams to deliver scalable and high-performance digital solutions.",
+        "Built, optimized, and deployed scalable full-stack web applications in an Agile environment, working with cross-functional teams to deliver reliable and high-performance digital products.",
       responsibilities: [
-        "Developed and maintained full-stack applications using the MERN stack (MongoDB, Express, React, Node.js).",
-        "Integrated RESTful APIs, authentication, and Stripe payment gateway for production-grade projects.",
-        "Collaborated with a 4-member engineering team, implementing Agile methodologies and sprint-based delivery.",
-        "Conducted code reviews, optimized performance, and ensured best practices in architecture and security.",
-        "Reduced bugs and downtime by 25% through continuous testing, debugging, and deployment automation."
+        "Developed and maintained production-ready MERN stack applications using MongoDB, Express.js, React.js, and Node.js.",
+        "Integrated REST APIs, authentication workflows, and Stripe payments for secure end-to-end user flows.",
+        "Worked closely with a 4-member engineering team using Agile sprints and collaborative delivery practices.",
+        "Improved application performance, code quality, and security through debugging, reviews, and ongoing optimization.",
+        "Reduced bugs and downtime by 25% through continuous testing, issue resolution, and deployment support."
       ],
-      technologies: [
-        "React.js",
+      technologies: ["React.js", "JavaScript", "CSS3", "HTML5", "Git", "REST APIs" 
+      
+      ]
+    },
+    {
+      title: "Frontend Developer Intern",
+      company: "Adversity Solutions",
+      duration: "May 2024 \u2013 July 2024",
+      location: "Mysore, India",
+      type: "Internship",
+      logo: "\u{1F4BB}",
+      description:
+        "Delivered responsive and user-focused frontend features for web applications, contributing to interface development, API integration, and overall product usability in a collaborative engineering environment.",
+      responsibilities: [
+        "Developed responsive and reusable UI components using React.js, HTML5, CSS3, and modern frontend development practices.",
+        "Collaborated with backend engineers to integrate REST APIs and implement smooth asynchronous data flows across application modules.",
+        "Enhanced usability, accessibility, and frontend performance through clean code, responsive layouts, and structured component design.",
+        "Contributed to internal documentation and shared frontend components to improve development consistency and team productivity."
+      ],
+      technologies: [ "React.js",
         "Node.js",
         "Express.js",
         "MongoDB",
@@ -29,28 +47,9 @@ const Experience = () => {
         "JavaScript",
         "Git",
         "Stripe API",
-        "RESTful APIs"
-      ]
-    },
-    {
-      title: "Frontend Developer Intern",
-      company: "Adversity Solutions",
-      duration: "May 2024 – July 2024",
-      location: "Mysore, India",
-      type: "Internship",
-      logo: "💻",
-      description:
-        "Worked on modern frontend development projects, gaining practical experience in building responsive user interfaces and integrating APIs for dynamic web applications.",
-      responsibilities: [
-        "Built responsive UI components using React.js, HTML5, and modern CSS frameworks.",
-        "Collaborated with backend developers to integrate REST APIs and handle asynchronous data flow.",
-        "Enhanced application accessibility and performance through clean, maintainable code.",
-        "Contributed to internal documentation and open-source frontend components."
-      ],
-      technologies: ["React.js", "JavaScript", "CSS3", "HTML5", "Git", "REST APIs"]
+        "REST APIs"]
     }
   ];
-
 
   return (
     <section id="experience" className="py-20 bg-gradient-to-b from-gray-900 to-black">
@@ -62,7 +61,7 @@ const Experience = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-pink-500 mx-auto mb-4"></div>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            My professional journey and the experiences that have shaped my career
+            My 1.6 years of experience delivering modern web applications with the MERN stack
           </p>
         </div>
 
@@ -74,7 +73,7 @@ const Experience = () => {
           {/* Experience Items */}
           <div className="space-y-12">
             {experiences.map((experience, index) => (
-              <div 
+              <div
                 key={index}
                 className={`relative flex items-center ${
                   index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
@@ -131,7 +130,7 @@ const Experience = () => {
                       <ul className="space-y-1">
                         {experience.responsibilities.map((responsibility, respIndex) => (
                           <li key={respIndex} className="text-sm text-gray-300 flex items-start space-x-2">
-                            <span className="text-blue-400 mt-1">•</span>
+                            <span className="text-blue-400 mt-1">&bull;</span>
                             <span>{responsibility}</span>
                           </li>
                         ))}
@@ -141,7 +140,7 @@ const Experience = () => {
                     {/* Technologies */}
                     <div className="flex flex-wrap gap-2">
                       {experience.technologies.map((tech, techIndex) => (
-                        <span 
+                        <span
                           key={techIndex}
                           className="px-2 py-1 bg-gray-700/50 text-gray-300 rounded text-xs font-medium border border-gray-600/50"
                         >
@@ -165,7 +164,7 @@ const Experience = () => {
             <p className="text-gray-300 mb-6">
               I'm always looking for new opportunities to grow and contribute to exciting projects
             </p>
-            <a 
+            <a
               href="#contact"
               className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-pink-500 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105"
             >
@@ -182,4 +181,3 @@ const Experience = () => {
 };
 
 export default Experience;
-
